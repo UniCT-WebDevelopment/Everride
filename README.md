@@ -2,6 +2,12 @@
 
 Social per condividere foto, percorsi gps ed esperienze 
 
+## Description
+
+Questo progetto implementa le basilari funzioni di un Social network: Registrazione utenti,caricamento di foto, follow, like, commenti e feed degli utenti.
+Oltre a queste sono presenti delle funzioni per aggiungere dei veicoli al tuo garage virtuale, e per registrare e visualizzare dei percorsi gps su una mappa,
+è possibile sia caricare il file gps o usare il sito stesso per avviare una localizzazione attiva(ovviamente si necessita di un dispositivo dotato di gps).
+
 ## Getting Started
 
 Queste istruzioni ti consentiranno di avere una copia esatta del progetto nella tua macchina.
@@ -21,14 +27,13 @@ Vue.js 2.6.11
 OpenStreetMap.js
 OpenLayers.js
 Intervention Image(PHP library)
+Mailtrap
 
 ```
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
 
 Installare node nella nostra master directory.
 ```
