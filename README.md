@@ -9,10 +9,19 @@ Queste istruzioni ti consentiranno di avere una copia esatta del progetto nella 
 
 ### Prerequisites
 
-
-
+Per servire il sito web arai bisogno dei seguenti software/librerie:
 ```
-Give examples
+Laravel Framework 7.9.2
+Composer version 1.10.5
+PHP >= 7.2.5
+Node 12.18.0
+Npm 6.14.4
+MariaDB 10.1.44
+Vue.js 2.6.11 
+OpenStreetMap.js
+OpenLayers.js
+Intervention Image(PHP library)
+
 ```
 
 ### Installing
@@ -21,9 +30,15 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 
+Installare node nella nostra master directory.
 ```
-Give the example
+node install 
 ```
+Compilare con nmp per avere tutti i moduli nei due file app.css e app.js .
+```
+npm run dev 
+```
+
 
 And repeat
 
