@@ -35,7 +35,7 @@ Git
 
 ### Installing
 
-#### Istruzioni punto per punto su come caricare il progetto in una distribuzione linux mint nuova:
+Istruzioni punto per punto su come caricare il progetto in una distribuzione linux mint nuova:
 
 ##### Laravel e PHP
 
@@ -68,9 +68,10 @@ Git
 18. CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
 18. GRANT ALL ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
 20. FLUSH PRIVILEGES;
-21. composer create-project phpmyadmin/phpmyadmin
-22. sudo apt-get install php7.2-mysqli
-23. sudo apt-get install php7.2-curl
+21. sudo apt-get install php7.2-mysqli
+22. sudo apt-get install php7.2-curl
+23. composer create-project phpmyadmin/phpmyadmin
+23.1 creare un database con phpmyadmin o da riga di comando
 ```
 
 ##### Node.js
