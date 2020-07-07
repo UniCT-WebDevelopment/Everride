@@ -1,79 +1,84 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# EverRide
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Social per condividere foto, percorsi gps ed esperienze 
 
-## About Laravel
+## Description
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Questo progetto implementa le basilari funzioni di un Social network: Registrazione utenti,caricamento di foto, follow, like, commenti e feed degli utenti.
+Oltre a queste sono presenti delle funzioni per aggiungere dei veicoli al tuo garage virtuale, e per registrare e visualizzare dei percorsi gps su una mappa,
+è possibile sia caricare il file gps o usare il sito stesso per avviare una localizzazione attiva(ovviamente si necessita di un dispositivo dotato di gps).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Getting Started
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Queste istruzioni ti consentiranno di avere una copia esatta del progetto nella tua macchina.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Prerequisites
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Per servire il sito web arai bisogno dei seguenti software/librerie:
 
-## Laravel Sponsors
+```
+Laravel Framework 7.9.2
+Composer version 1.10.5
+PHP >= 7.2.5
+Node 12.18.0
+Npm 6.14.4
+MariaDB 10.1.44
+Vue.js 2.6.11 
+OpenStreetMap.js
+OpenLayers.js
+Intervention Image(PHP library)
+Mailtrap
+Git
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
+### Installing
 
-## Contributing
+Istruzioni punto per punto su come utilizzare il progetto e Laravel.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1) sudo apt update
+2) sudo apt upgrade
+3) sudo apt install git
+4) sudo apt install php (7.2 o superiore)
+5) php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+6) php -r "if (hash_file('sha384', 'composer-setup.php') === 'e5325b19b381bfd88ce90a5ddb7823406b2a38cff6bb704b0acc289a09c8128d4a8ce2bbafcd1fcbdc38666422fe2806') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+7) php composer-setup.php
+8) php -r "unlink('composer-setup.php');"
+9) spostare composer.phar in una cartella presente nel $PATH
+   sudo mv composer.phar /usr/local/bin/composer
+10) installare tutti i componenti richiesti dal composer nel mio caso:
+    sudo apt-get install php7.2-zip
+    sudo apt-get install php7.2-dom
+11) composer global require laravel/installer
+12) PATH=~/.config/composer/vendor/bin:$PATH 
+13) sudo nano .bashrc aggiungere il comando precedente
+14) mkdir LaravelProjects
+15) composer create-project laravel/laravel EverRide
 
-## Code of Conduct
+1) apt install mariadb-server mariadb-client
+2) sudo systemctl start mariadb
+3)  sudo mysql -u root
+4) CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
+5) GRANT ALL ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
+6) FLUSH PRIVILEGES;
+7) composer create-project phpmyadmin/phpmyadmin
+8) sudo apt-get install php7.2-mysqli
+9) sudo apt-get install php7.2-curl
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+16) sudo apt install nodejs
+17) sudo apt install npm
+18) git clone https://github.com/LongLife98/SocialRides.git
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Built With
 
-## License
+* [Laravel](https://laravel.com/) - The web framework used
+* [Node](https://nodejs.org/it/) - Dependency Management
+* [OpenStreetMap](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Authors
+
+* **Damiano Di Franco**  [LongLife98](https://github.com/LongLife98)
+
