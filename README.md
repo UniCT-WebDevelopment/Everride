@@ -6,7 +6,7 @@ Social per condividere foto, percorsi gps ed esperienze
 
 Questo progetto implementa le basilari funzioni di un Social network: Registrazione utenti,caricamento di foto, follow, like, commenti e feed degli utenti.
 Oltre a queste sono presenti delle funzioni per aggiungere dei veicoli al tuo garage virtuale, e per registrare e visualizzare dei percorsi gps su una mappa,
-è possibile sia caricare il file gps o usare il sito stesso per avviare una localizzazione attiva(ovviamente si necessita di un dispositivo dotato di gps).
+è possibile caricare un file gps acquisito esternamente o usare il sito stesso per avviare una localizzazione attiva dei tuoi spostamenti (ovviamente si necessita di un dispositivo dotato di gps).
 
 ## Getting Started
 
