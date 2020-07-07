@@ -1,5 +1,5 @@
 @component('mail::message')
-# Welcome to SocialRide
+# Welcome to EverRide
 
 This is a social network for travel enthusiasts,
 click on the button and join us!
