@@ -39,6 +39,7 @@ Git
 
 ##### Laravel e PHP
 
+```
 1. sudo apt update
 2. sudo apt upgrade
 3. sudo apt install git
@@ -56,9 +57,11 @@ Git
 12. PATH=~/.config/composer/vendor/bin:$PATH 
 13. sudo nano .bashrc aggiungere il comando precedente
 14. mkdir LaravelProjects
+```
 
 ##### Database
 
+```
 15. apt install mariadb-server mariadb-client
 16. sudo systemctl start mariadb
 17. sudo mysql -u root
@@ -68,14 +71,18 @@ Git
 21. composer create-project phpmyadmin/phpmyadmin
 22. sudo apt-get install php7.2-mysqli
 23. sudo apt-get install php7.2-curl
+```
 
 ##### Node.js
  
+``` 
 24. curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 25. sudo apt-get install -y nodejs
+```
 
 ##### Configurazione e sviluppo
 
+```
 26. git clone https://github.com/LongLife98/SocialRides.git
 27. modificare il .env inserendo i valori del database
 28. php artisan migrate
@@ -87,7 +94,7 @@ Git
 34. composer install
 35. php artisan storage:link
 36. php artisan serve
-
+```
 
 ## Built With
 
