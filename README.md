@@ -2,18 +2,18 @@
 
 Social per condividere foto, percorsi gps ed esperienze 
 
-## Description
+## Descrizione
 
 Questo progetto implementa le basilari funzioni di un Social network: Registrazione utenti,caricamento di foto, follow, like, commenti e feed degli utenti.
 Oltre a queste sono presenti delle funzioni per aggiungere dei veicoli al tuo garage virtuale, e per registrare e visualizzare dei percorsi gps su una mappa,
 è possibile caricare un file gps acquisito esternamente o usare il sito stesso per avviare una localizzazione attiva dei tuoi spostamenti (ovviamente si necessita di un dispositivo dotato di gps).
 
-## Getting Started
+## Iniziamo
 
 Queste istruzioni ti consentiranno di avere una copia esatta del progetto nella tua macchina.
 
 
-### Prerequisites
+### Prerequisiti
 
 Per servire il sito web arai bisogno dei seguenti software/librerie:
 
@@ -33,7 +33,7 @@ Git
 
 ```
 
-### Installing
+### Installazione
 
 Istruzioni punto per punto su come caricare il progetto in una distribuzione linux mint nuova:
 
@@ -97,14 +97,14 @@ Istruzioni punto per punto su come caricare il progetto in una distribuzione lin
 36. php artisan serve
 ```
 
-## Built With
+## Sviluppato con
 
-* [Laravel](https://laravel.com/) - The web framework used
-* [Node](https://nodejs.org/it/) - Dependency Management
-* [OpenStreetMap](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Laravel](https://laravel.com/) 
+* [Node](https://nodejs.org/it/) 
+* [OpenStreetMap](https://rometools.github.io/rome/) 
 
 
-## Authors
+## Autore
 
 * **Damiano Di Franco**  [LongLife98](https://github.com/LongLife98)
 
