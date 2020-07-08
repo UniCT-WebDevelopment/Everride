@@ -1,12 +1,12 @@
 # EverRide
 
-Social per condividere foto, percorsi gps ed esperienze 
+Social per condividere foto, percorsi gps ed esperienze.
 
 ## Descrizione
 
-Questo progetto implementa le basilari funzioni di un Social network: Registrazione utenti,caricamento di foto, follow, like, commenti e feed degli utenti.
-Oltre a queste sono presenti delle funzioni per aggiungere dei veicoli al tuo garage virtuale, e per registrare e visualizzare dei percorsi gps su una mappa,
-è possibile caricare un file gps acquisito esternamente o usare il sito stesso per avviare una localizzazione attiva dei tuoi spostamenti (ovviamente si necessita di un dispositivo dotato di gps).
+Questo progetto implementa le basilari funzioni di un Social network: Registrazione utenti, caricamento di foto, follow, like, commenti e feed degli utenti.
+Oltre a queste sono presenti delle funzioni per aggiungere dei veicoli al tuo garage virtuale, per registrare e visualizzare dei percorsi gps su una mappa,
+è possibile anche caricare un file gps acquisito esternamente o usare il sito stesso per avviare una localizzazione attiva dei tuoi spostamenti (ovviamente si necessita di un dispositivo dotato di gps).
 
 ## Iniziamo
 
@@ -15,7 +15,7 @@ Queste istruzioni ti consentiranno di avere una copia esatta del progetto nella 
 
 ### Prerequisiti
 
-Per servire il sito web arai bisogno dei seguenti software/librerie:
+Per servire il sito web avrai bisogno dei seguenti software/librerie:
 
 ```
 Laravel Framework 7.9.2
@@ -35,7 +35,7 @@ Git
 
 ### Installazione
 
-Istruzioni punto per punto su come caricare il progetto in una distribuzione linux mint nuova:
+Istruzioni punto per punto su come caricare il progetto in una distribuzione linux mint appena installata:
 
 ##### Laravel e PHP
 
